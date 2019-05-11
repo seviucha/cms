@@ -1,0 +1,9 @@
+{% extends "main_layout.html.twig" %}
+
+{% block content %}
+    <h1>Gallery</h1>
+    <h1>{{ ez_render_field(content, 'title') }}</h1>
+    <div>{{ ez_render_field(content, 'intro') }}</div>
+    <div>{{ ez_render_field(content, 'body') }}</div>
+    <div>{{ ez_render_field(content, 'image', { parameters: { 'alias': 'medium' } }) }}</div>
+{% endblock %}
